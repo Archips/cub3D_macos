@@ -172,6 +172,9 @@ every: all
 # run           vanilla run
 # malloc_test   gh/ft_mallocator TODO broken
 
+run: $(NAME)
+	-./$(NAME) ./resources/maps/labyrinth.cub
+
 run-%: $(NAME)
 	-./$(NAME) $*
 
